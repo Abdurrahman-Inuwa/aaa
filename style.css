@@ -1,0 +1,589 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* GENERAL */
+.container {
+  max-width: 140rem;
+  margin: 0 auto;
+  padding: 0 3.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* HEADER */
+.header {
+  height: 6.4rem;
+  border-bottom: 2px solid black;
+}
+
+.container-header {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 200px 1fr;
+}
+
+.logo-link {
+  display: inline-block;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 3.6rem;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  width: 100%;
+}
+
+.main-nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.main-ul {
+  width: 50rem;
+}
+
+.secondary-ul {
+  gap: 2.8rem;
+}
+
+.main-link a {
+  font-size: 1.8rem;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* HERO SECTION */
+
+.hero-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1.5rem;
+}
+.hero-section-description {
+  display: flex;
+  align-items: center;
+}
+h1 {
+  margin-top: 2.6rem;
+  font-size: 6.4rem;
+}
+
+.main-heading {
+  font-size: 2.2rem;
+  padding-left: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/* SERVICES */
+
+.services {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 10rem;
+  column-gap: 1.5rem;
+}
+.services_box {
+  background-color: #14191d;
+}
+
+.top-selling {
+  margin-top: 6.4rem;
+}
+
+.top-selling-heading {
+  font-size: 3.6rem;
+}
+
+.top-selling-product-container {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 27rem;
+  grid-auto-rows: 27rem;
+  gap: 2rem;
+}
+
+.product {
+  border: 1px solid #14191d;
+  display: grid;
+  grid-template-rows: 1fr 5rem;
+}
+
+.product-car-img {
+  width: 100%;
+  display: inline-block;
+}
+
+.product-img {
+  display: flex;
+  align-items: center;
+}
+.product-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0.5rem 1.5rem;
+  border-top: 1px solid #14191d;
+}
+.buying-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.car-name {
+  font-size: 1.8rem;
+}
+.car-price {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.footer {
+  margin-top: 3.5rem;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  border-top: 2px solid #14191d;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 46.5rem;
+  overflow: hidden;
+}
+
+.contact-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-info h2,
+.about-title {
+  margin: 1.5rem 0;
+  text-align: center;
+  font-size: 3.6rem;
+  text-transform: uppercase;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: auto;
+}
+
+label {
+  display: block;
+  font-size: 1.6rem;
+  color: #14191d;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+input {
+  width: 48rem;
+  height: 3.6rem;
+  display: block;
+}
+
+textarea {
+  width: 48rem;
+  height: 15rem;
+}
+
+button {
+  width: 40rem;
+  height: 3.6rem;
+  background-color: #14191d;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: white;
+  border: none;
+}
+
+.contact-img {
+  overflow: hidden;
+}
+
+.contact-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.footer-contact {
+  margin-top: 0;
+}
+
+.about-container p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+.inner-logo-span {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.services a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 2.6rem;
+}
+
+.container.container-rentals {
+  margin-top: 2.6rem;
+}
+
+.car-selection-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 30rem;
+  column-gap: 3.6rem;
+  /* overflow: hidden; */
+}
+
+table {
+  border-collapse: collapse;
+  text-align: left;
+  width: 70%;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+th {
+  width: 40%;
+  font-weight: 500;
+}
+table,
+th,
+td {
+  border: 1px solid #14191d;
+  padding: 1rem;
+}
+
+.select-car {
+  display: grid;
+  grid-template-rows: 4rem 1fr;
+  row-gap: 1.5rem;
+}
+
+.car-selected-img {
+  background-color: #14191d;
+}
+
+.car-selected-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.car-rentals-form {
+  display: flex;
+  flex-direction: row;
+}
+
+.car-rentals-form select {
+  flex: 1;
+  height: 4rem;
+  border: 1px solid #14191d;
+  font-size: 1.8rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.car-details {
+  display: grid;
+  grid-template-rows: 1fr 10rem;
+}
+
+.book-now {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.caption {
+  font-size: 2.1rem;
+  float: left;
+}
+
+.policy h2,
+.location h2 {
+  font-size: 2.1rem;
+  text-transform: uppercase;
+}
+
+.policy ol {
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.2rem;
+  margin-left: 4rem;
+}
+
+.location {
+  margin: 4rem 0;
+}
+
+.location p {
+  font-size: 1.4rem;
+}
+
+.location-aaa {
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+.sell-form {
+  margin-top: 2.6rem;
+  gap: 4.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+}
+
+.sell-form input:not([type="file"]),
+textarea {
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.sell-form div {
+  margin-bottom: 1.5rem;
+}
+
+fieldset {
+  border: 1px solid #14191d;
+  padding: 1.5rem;
+  border-radius: 5px;
+}
+
+legend {
+  font-size: 1.6rem;
+}
+
+fieldset section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sell-now {
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sell-now textarea {
+  width: 100%;
+  height: 10rem;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.sell-now button {
+  border-radius: 7px;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 45%;
+  }
+  .sell-form {
+    grid-template-columns: repeat(1, 1fr);
+    /* grid-template-rows: repeat(2, auto); */
+  }
+  .car-selection-details {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 30rem;
+    row-gap: 3.6rem;
+  }
+  .car-selected-img {
+    overflow: hidden;
+  }
+  .car-selected-img img {
+    /* display: none; */
+    width: 100%;
+    height: 100%;
+    /* width: 100%;
+    height: 100%;
+    object-fit: cover; */
+  }
+  .contact-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .product {
+    border: 1px solid #14191d;
+    display: grid;
+    grid-template-rows: 1fr 6rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .main-nav {
+    background-color: #14191d;
+    display: none;
+  }
+  .main-nav .icon {
+    color: white;
+  }
+
+  .top-selling-product-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 24rem;
+    grid-auto-rows: 24rem;
+    gap: 2rem;
+  }
+  .hero-section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1.5rem;
+  }
+  .product-img {
+    overflow: hidden;
+  }
+
+  .product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 420px) {
+  .product {
+    grid-template-rows: 1fr 8rem;
+  }
+
+  .services_box {
+    font-size: 1.4rem;
+  }
+  .top-selling-product-container {
+    grid-template-rows: 35rem;
+    grid-auto-rows: 35rem;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 30%;
+  }
+}
+
+.adjust-main-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.remove-from-flow {
+  position: absolute;
+  top: 6.4rem;
+  left: 0;
+}
+
+.main-nav-modifier {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.main-nav-ul-modifier {
+  background-color: #14191d;
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+}
+
+.main-nav-ul-li-modifier {
+  display: block;
+  padding: 1.5rem;
+  width: 100%;
+  border-bottom: 1px solid white;
+  font-size: 2rem;
+}
+
+.main-nav-ul-li-modifier a {
+  color: white !important;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 701px) {
+  .adjust-main-nav {
+    display: none;
+  }
+}
